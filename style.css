@@ -1,0 +1,44 @@
+html {
+    scroll-behavior: smooth;
+}
+
+/* Utility untuk menyembunyikan scrollbar agar slider terlihat bersih */
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+.scrollbar-hide {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+/* Spreadsheet look */
+.spreadsheet-table {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+.spreadsheet-table td,
+.spreadsheet-table th {
+  height: 36px;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.spreadsheet-table tbody tr:hover td {
+  background-color: #f1f5f9;
+}
+
+.spreadsheet-table thead th {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+/* Scrollbar */
+.spreadsheet-scroll::-webkit-scrollbar {
+  height: 8px;
+  width: 8px;
+}
+.spreadsheet-scroll::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 10px;
+}
